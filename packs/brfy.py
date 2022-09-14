@@ -188,7 +188,6 @@ def desacentua(x):
     
 # ---------------------------------------------------
 
-
 def estado_to_UF(x):
     estado_UF = {'ACRE':'AC', 'ALAGOAS':'AL', 'AMAPA':'AP', 'AMAZONAS':'AM', 'BAHIA':'BA', 'CEARA':'CE', 'DISTRITO FEDERAL':'DF', 'ESPIRITO SANTO':'ES', 'GOIAS':'GO', 'MARANHAO':'MA', 'MATO GROSSO':'MT', 'MATO GROSSO DO SUL':'MS', 'MINAS GERAIS':'MG', 'PARA':'PA', 'PARAIBA':'PB', 'PARANA':'PR', 'PERNAMBUCO':'PE', 'PIAUI':'PI', 'RIO DE JANEIRO':'RJ', 'RIO GRANDE DO NORTE':'RN', 'RIO GRANDE DO SUL':'RS', 'RONDONIA':'RO', 'RORAIMA':'RR', 'SANTA CATARINA':'SC', 'SAO PAULO':'SP', 'SERGIPE':'SE', 'TOCANTINS':'TO'}
     
@@ -205,10 +204,16 @@ def estado_to_UF(x):
              'Ñ': 'N', 'ñ': 'n',
              'Ç': 'C', 'ç': 'c',
              '§': 'S',  '³': '3', '²': '2', '¹': '1'}
+
     normalize = str.maketrans(normalMap)
+
     y = x.translate(normalize).upper()
-    for i in estado_UF:
-        a = a.replace(i)
+
+    try:
+        a = estado_UF[y]
+    except:
+        a = x
+
     return a
 
 # ---------------------------------------------------
