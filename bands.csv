@@ -1,0 +1,17 @@
+Band,Musician,Instrument,Sings,Grade,Coolness
+The Beatles,John Lennon,Piano,TRUE,9.1,95
+The Beatles,Paul McCartney,Bass,TRUE,7.8,63
+The Beatles,George Harrison,Guitar,TRUE,8.4,71
+The Beatles,Ringo Starr,Drums,FALSE,7.6,89
+Rolling Stones,Mick Jagger,Voice,TRUE,6,57
+Rolling Stones,Keith Richards,Guitar,FALSE,8,91
+Rolling Stones,Charlie Watts,Drums,TRUE,8.7,98
+Rolling Stones,Ron Wood,Guitar,FALSE,4.5,48
+Led Zeppelin,John Paul Jones,Piano,FALSE,8.9,60
+Led Zeppelin,Robert Plant,Voice,TRUE,7.8,65
+Led Zeppelin,Jimmy Page,Guitar,FALSE,10,98
+Led Zeppelin,John Bonham,Drums,FALSE,9.7,92
+Pink Floyd,Roger Waters,Bass,TRUE,8.7,98
+Pink Floyd,David Gilmour,Guitar,TRUE,8.5,82
+Pink Floyd,Richard Wright,Piano,TRUE,7.9,73
+Pink Floyd,Nick Mason,Drums,FALSE,7.2,76
