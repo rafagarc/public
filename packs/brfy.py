@@ -122,10 +122,10 @@ def date_conv_br(my_date):
     return ymd_date    
 
 def De_to_de(x):
-    prep_dic = {' Do ':' do ', ' Da ':' da ', ' Dos ':' dos ', ' Das ':' das ', ' De ':' de '}
-    for k, v in prep_dic:
-        x = x.replace(k,v)
-    return a
+    prep_dic = {' Do ':' do ', ' Da ':' da ', ' Dos ':' dos ', ' Das ':' das ', ' De ':' de ', ' E ': ' e '}
+    for i in prep_dic:
+        x = x.replace(i,prep_dic[i])
+    return x
 
 # ---------------------------------------------------
 
